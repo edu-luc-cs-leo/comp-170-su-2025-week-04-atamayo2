@@ -125,3 +125,10 @@ print(compound_interest(1000, 0.05, 5))
 
 # Test holllow square
 draw_hollow_square()
+
+# Reflection response
+After viewing the solutions and comparing it to my answers i think i did ok with having correct result 
+but it was very vague and not enough details as the solutions. I did enjoy doing random numbers on trying to 
+get a diamond result and although it was very confusing it was fun seeing the results. Overall i think 
+this assignment was a lot more fun than the other ones so far but  ido think i should add more thorough comments
+and a cleaner documented code so it looks neat and oganized.

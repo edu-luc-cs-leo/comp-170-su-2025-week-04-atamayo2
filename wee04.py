@@ -1,4 +1,33 @@
+# Question 1 
+def longest_word(words: list[str]) ->str:
+  if not words:
+    return None
+  return max(words, key=len)
+# Question 2
+def shortest_word(words: list[str]) ->str:
+  if not words:
+    return None
+  return min(words, key=len)
 
+# Question 3
+def odd_words(words: list[str]) -> str:
+  if not words:
+    return None
+  return [word for word in words if len(word) % 2 == 1]
+
+# Question 4
+def average_words(words: list[str]) ->str:
+  if not words:
+    return None 
+  avg_len = sum(len(word) for word in words) / len(words)
+  result = [word for word in words if len(word) >= avg_len - 1 and len(word) <= avg_len + 1]
+  return result
+
+# Question 5
+def intersect(foo: list[str], bar: list[str]) -> bool:
+  if not foo or not bar:
+    return False
+  return bool(set(foo) & set(bar)) 
 
 #--------------------------------------------------------------------------------#
 # ⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎  WRITE YOUR CODE ABOVE THIS  LINE ⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎⬆︎
